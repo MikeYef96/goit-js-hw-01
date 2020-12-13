@@ -5,14 +5,14 @@ while (input !== null) {
     input = prompt("Please, enter a number");
 
     if (input !== null) {
-        let number = Number(input);
+        input = Number(input);
 
-        if (Number.isNaN(number)) {
+        if (Number.isNaN(input)) {
             alert("Entered not a number, please try again");
         }
 
         else {
-            total += number;
+            total += input;
         }
     }
 }
