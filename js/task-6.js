@@ -5,14 +5,14 @@ while (input !== null) {
     input = prompt("Please, enter a number");
 
     if (input !== null) {
-        input = Number(input);
+        let num = Number(input);
 
-        if (!+input) {
+        if (!+num) {
             alert("Entered not a number, please try again");
         }
 
         else {
-            total += input;
+            total += num;
         }
     }
 }
