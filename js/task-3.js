@@ -3,7 +3,7 @@ let message;
 
 let input = prompt("Введите пароль");
 
-if (input === null)
+if (!input)
 {
     message = console.log("Отменено пользователем!");
 }

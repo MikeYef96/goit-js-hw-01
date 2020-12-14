@@ -7,7 +7,7 @@ while (input !== null) {
     if (input !== null) {
         input = Number(input);
 
-        if (Number.isNaN(input)) {
+        if (!+input) {
             alert("Entered not a number, please try again");
         }
 
@@ -18,4 +18,3 @@ while (input !== null) {
 }
 
 alert(`Total sum of numbers equal ${total}`);
-console.log(`Total sum of numbers equal ${total}`);

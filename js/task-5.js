@@ -5,7 +5,6 @@ if (country !== null) {
     country = country.toLowerCase();
 }
 else if (country === null){
-    console.log("Cancelled by user");
     alert("Cancelled by user");
 }
 
@@ -31,7 +30,7 @@ switch (country) {
 }
 
 if (price !== -1) {
-    country = country.charAt(0).toUpperCase() + country.split(1);
+    country = country[0].toUpperCase() + country.slice(1);
     alert(`Delivery to ${country} will cost ${price} credits`);
     console.log(`Delivery to ${country} will cost ${price} credits`);
 

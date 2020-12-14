@@ -27,18 +27,12 @@ if (ordered === null)
     console.log("Отменено пользавателем");
 }
 
-else if(ordered > total)
+else if(ordered >= total)
 {
     console.log("На складе недостаточно товаров!");
 }
 
-else if(ordered <= total)
-{
-    console.log("Заказ оформлен, с вами свяжется менеджер");
-}
-
 else
 {
-    console.log(value, "Ошибка, введите цифрами количество товаров к заказу");
-    //TO INFORM USER THAT INPUT IS NOT A NUMBER *\__O-O__/*
+    console.log("Заказ оформлен, с вами свяжется менеджер");
 }
