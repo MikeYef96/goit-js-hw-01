@@ -31,11 +31,15 @@ switch (country) {
 }
 
 if (price !== -1) {
-    country = country.charAt(0).toUpperCase() + country.slice(1);
+    country = country.charAt(0).toUpperCase() + country.split(1);
+    alert(`Delivery to ${country} will cost ${price} credits`);
     console.log(`Delivery to ${country} will cost ${price} credits`);
+
+//     country = country.charAt(0).toUpperCase() + country.slice(1);
+//     console.log(`Delivery to ${country} will cost ${price} credits`);
 }
 
-else if(price === -1){
+else if(price === -1 && country !== null){
     alert("In your country delivery not available");
 }
 
