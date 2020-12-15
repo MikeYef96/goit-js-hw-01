@@ -4,7 +4,7 @@ let price;
 if (country !== null) {
     country = country.toLowerCase();
 }
-else if (country === null){
+else {
     alert("Cancelled by user");
 }
 
